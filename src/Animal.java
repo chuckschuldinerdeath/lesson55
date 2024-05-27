@@ -19,18 +19,21 @@ public abstract class Animal {
 
         int time = distance/speedRun;
         if (stamina - distance >= 0) {
+            System.out.println(time);
             return time;
         }else {
-            System.out.print("Животное устало\n " + " время: ");
+            System.out.print("Животное устало" + " время: " + -1);
             return -1;
         }
     }
 
     public int swim(int distance){
+        int time = distance/speedSwim;
         if (stamina - distance > 0){
-            return distance/speedSwim;
+            System.out.println(time);
+            return time;
         } else {
-            System.out.print("Животное устало" + "время: ");
+            System.out.print("Животное устало " + "время: " + -1);
             return -1;
         }
     }

@@ -8,19 +8,22 @@ public class Horse extends Animal {
 
         int time = distance / super.getSpeedRun();
         if (super.getStamina() - distance >= 0) {
+            System.out.println(time);
             return time;
         } else {
-            System.out.print("Животное устало\n " + " время: ");
+            System.out.print("Животное устало" + " время: " + -1 + "\n");
             return -1;
         }
     }
 
     @Override
     public int swim(int distance) {
+        int time = distance / getSpeedSwim();
         if (super.getStamina() - (distance * 4) >= 0) {
-            return distance / getSpeedSwim();
+            System.out.println(time);
+            return time;
         } else {
-            System.out.print("Животное устало\n" + "время: " + " -1\n");
+            System.out.print("Животное устало " + "время: " + -1 + "\n");
             return -1;
         }
     }
