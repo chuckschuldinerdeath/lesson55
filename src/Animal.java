@@ -11,6 +11,10 @@ public abstract class Animal {
         this.stamina = stamina;
     }
 
+    public void info() {
+        System.out.println("name: " + name + " speedRun: " + speedRun + " speedSwim: " + speedSwim + " stamina: " + stamina);
+    }
+
     public int run(int distance){
 
         int time = distance/speedRun;
