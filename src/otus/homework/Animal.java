@@ -1,10 +1,12 @@
+package otus.homework;
+
 public abstract class Animal {
     private String name;
     private int speedRun;
     private int speedSwim;
     private int stamina;
 
-    public Animal(String name, int speedRun, int speedSwim, int stamina) {
+    protected Animal(String name, int speedRun, int speedSwim, int stamina) {
         this.name = name;
         this.speedRun = speedRun;
         this.speedSwim = speedSwim;

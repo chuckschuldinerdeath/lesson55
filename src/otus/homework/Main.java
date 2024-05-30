@@ -1,3 +1,5 @@
+package otus.homework;
+
 public class Main {
     public static void main(String[] args) {
         Animal animal = new Cat("дуся кошка", 10, 1, 30);
